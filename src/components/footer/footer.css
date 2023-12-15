@@ -1,0 +1,116 @@
+.footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer_contact {
+    color: var(--textColor);
+    font-family: Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+
+.footerC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    column-gap: 209px;
+    margin-bottom: 80px;
+}
+
+.contact_phone {
+    color: var(--textColor);
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+}
+
+ul.contact_phone li {
+    margin-bottom: 15px;
+}
+
+.insta_text {
+    color: var(--textColor);
+    font-family: Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+
+.insta_logo {
+    margin-top: 25px;
+}
+
+.footer_copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.5;
+    color: var(--textColor);
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+}
+
+.line_1 {
+    height: 1px;
+    opacity: 0.5;
+    background: #FFF;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1150px) {
+    .footerC {
+        column-gap: 15px;
+    }
+}
+
+@media (max-width: 950px) {
+    .footerC {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+    .footer_content {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer_content {
+        margin-top: 40px;
+    }
+
+    .footerC {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_contact {
+        margin-top: 30px;
+    }
+
+    .contact_phone {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .footer_insta {
+        margin-top: 10px;
+    }
+}

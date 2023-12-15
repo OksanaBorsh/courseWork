@@ -1,0 +1,49 @@
+.cosmetics_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 24px;
+}
+
+.main_text {
+    color: var(--textColor);
+    text-align: center;
+    font-family: Garamond;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+}
+
+@media (max-width: 1150px) {
+    .cosmetics_list {
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        gap: 16px; 
+    }
+}
+
+@media (max-width: 950px) {
+    .cosmetics_list {
+        gap: 12px; 
+    }
+}
+
+@media (max-width: 730px) {
+    .main_text {
+        font-size: 36px; 
+        line-height: 110%; 
+    }
+}
+
+@media (max-width: 550px) {
+    .cosmetics_list {
+        margin-top: 30px;
+    }
+
+    .main_text {
+        font-size: 28px; 
+        line-height: 100%;
+    }
+}

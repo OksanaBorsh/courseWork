@@ -1,0 +1,123 @@
+.works_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 168px;
+}
+
+.work_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: var(--textColor);
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 31.2px */
+}
+
+.work_tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work_tabs li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.work_tabs li:last-child {
+    margin-right: 0;
+}
+
+.work_tabs a {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.work_tabs a:hover {
+    color: var(--accent);
+}
+
+.work_tabs a::before   {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px; 
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent); 
+    content: '';
+    transition: bottom 0.2s; 
+    visibility: hidden; 
+}
+
+.work_tabs a:hover::before   {
+    bottom: -2px; 
+    visibility: visible; 
+}
+
+.work_tabs li.active a {
+    color: var(--accent); 
+}
+
+.work_tabs li.active a::before {
+    bottom: -2px; 
+    visibility: visible;
+}
+
+.work_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 312px;
+    margin-right: 312px;
+    gap: 24px;
+}
+
+.work_photo img {
+    width: calc((100% - 48px) / 3);
+    height: auto;
+}
+
+@media (max-width: 1150px) {
+    .work_tabs li {
+        margin-right: 15px; /* Уменьшено для лучшего отображения на мобильных устройствах */
+    }
+}
+
+@media (max-width: 950px) {
+    .work_photo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 730px) {
+    .work_tabs {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .works_content {
+        margin-top: 100px;
+    }
+
+    .work_tabs li {
+        margin-right: 10px; 
+    }
+    
+    .work_photo img {
+        width: calc(100% - 20px); 
+    }
+}

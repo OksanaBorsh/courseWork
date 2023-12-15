@@ -1,0 +1,111 @@
+.window_content {
+    width: 475px;
+    height: 1038px;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    left: 1445px;
+    z-index: 999;
+}
+
+.window_text {
+    padding-top: 174px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.window_close {
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.text_lorem {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text_contact {
+    font-family: Garamond;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 80px;
+}
+
+.contact_phone{
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.contact_phone span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.text_graphic {
+    font-family: Garamond;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.graphic_time {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.graphic_time span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .window_content {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    .window_text,
+    .window_close {
+        padding: 20px;
+    }
+
+    .text_lorem {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .text_contact,
+    .text_graphic {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .contact_phone,
+    .graphic_time {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

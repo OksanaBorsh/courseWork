@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.header_logo {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.social_insta {
+    padding-right: 126px;
+}
+
+.info_window {
+    padding-left: 113px;
+}
+
+nav a {
+    display: flex;
+    color: var(--textColor);
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+}
+
+.nav_left ul, .nav_right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 80px;
+}
+
+
+.line {
+    margin-top: 30px;
+    height: 1px;
+    opacity: 0.5;
+    background: #FFF;
+    overflow-x: hidden;
+}
+
+.nav_left ul li.active a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+  
+
+@media (max-width: 1350px) {
+    .header_logo,
+    .social_insta,
+    .info_window {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .nav_left ul,
+    .nav_right ul {
+        column-gap: 30px;
+    }
+}
+@media (max-width: 1150px) {
+    .header_logo,
+    .social_insta,
+    .info_window {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_left ul,
+    .nav_right ul {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header_logo,
+    .social_insta,
+    .info_window {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 730px) {
+    .header_logo,
+    .social_insta,
+    .info_window {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .nav_left ul,
+    .nav_right ul {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header_logo,
+    .social_insta,
+    .info_window {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav_left ul,
+    .nav_right ul {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        column-gap: 5px;
+    }
+}

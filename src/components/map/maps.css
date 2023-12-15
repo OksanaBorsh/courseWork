@@ -1,0 +1,56 @@
+.maps_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    color: var(--textColor);
+    text-align: center;
+    font-family: Garamond;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+}
+
+.google_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.footer_contact {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 80px;
+    column-gap: 105px;
+}
+  
+.contact_phone {
+    list-style-type: none;
+    padding-top: 25px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .maps_name {
+        font-size: 36px; 
+    }
+
+    .google_map {
+        padding-top: 40px; 
+    }
+
+    .footer_contact {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        column-gap: 0; 
+    }
+
+    .contact_phone {
+        text-align: center;
+        padding-top: 10px; 
+    }
+}

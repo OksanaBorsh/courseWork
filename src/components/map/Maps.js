@@ -22,10 +22,10 @@ const Maps = () => {
           </GoogleMap>
         </LoadScript>
         </div>
-        <ul className="footer_contact">
+        <ul className="footer_cont">
           <li>
             <span>Контакти</span>
-            <ul className="contact_phone">
+            <ul className="contact_ph">
               <li>+38 (099) 48 67 566</li>
               <li>+38 (099) 48 67 566</li>
               <li>вул. Василя Сергієнка, дім 6</li>
@@ -33,14 +33,14 @@ const Maps = () => {
           </li>
           <li>
             <span>Графік роботи</span>
-            <ul className="contact_phone">
+            <ul className="contact_ph">
               <li>з 10:00 до 21:00 (Пн-Пт)</li>
               <li>з 11:00 до 20:00 (Сб-Вс)</li>
             </ul>
           </li>
           <li>
             <span>Контакти</span>
-            <ul className="contact_phone">
+            <ul className="contact_ph">
               <li>+38 (099) 48 67 566</li>
               <li>+38 (099) 48 67 566</li>
               <li>вул. Василя Сергієнка, дім 6</li>
@@ -48,7 +48,7 @@ const Maps = () => {
           </li>
           <li>
             <span>Графік роботи</span>
-            <ul className="contact_phone">
+            <ul className="contact_ph">
               <li>з 10:00 до 21:00 (Пн-Пт)</li>
               <li>з 11:00 до 20:00 (Сб-Вс)</li>
             </ul>
